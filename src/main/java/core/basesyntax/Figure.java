@@ -1,11 +1,7 @@
 package core.basesyntax;
 
-public abstract class Figure {
+public abstract class Figure implements Area, Draw {
     private String color;
-
-    public abstract void draw();
-
-    public abstract double getArea();
 
     public void setColor(String color) {
         this.color = color;
