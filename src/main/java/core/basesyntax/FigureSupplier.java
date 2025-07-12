@@ -10,16 +10,16 @@ public class FigureSupplier {
         switch (selected) {
             case Circle: return new Circle(new Random().nextInt(101),
                     new ColorSupplier().getRandomColor());
-            case IsoscelesTrapezoid: return new IsoscelesTrapezoid(new Random().nextInt(101),
-                    new Random().nextInt(101), new Random().nextInt(101),
+            case IsoscelesTrapezoid: return new IsoscelesTrapezoid(new Random().nextInt(101) + 1,
+                    new Random().nextInt(101) + 1, new Random().nextInt(101) + 1,
                     new ColorSupplier().getRandomColor());
-            case Rectangle: return new Rectangle(new Random().nextInt(101),
-                    new Random().nextInt(101),
+            case Rectangle: return new Rectangle(new Random().nextInt(101) + 1,
+                    new Random().nextInt(101) + 1,
                     new ColorSupplier().getRandomColor());
-            case RightTriangle: return new RightTriangle(new Random().nextInt(101),
-                    new Random().nextInt(101),
+            case RightTriangle: return new RightTriangle(new Random().nextInt(101) + 1,
+                    new Random().nextInt(101) + 1,
                     new ColorSupplier().getRandomColor());
-            case Square: return new Square(new Random().nextInt(101),
+            case Square: return new Square(new Random().nextInt(101) + 1,
                     new ColorSupplier().getRandomColor());
             default:
                 System.out.println("Default");
