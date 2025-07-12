@@ -1,9 +1,5 @@
 package core.basesyntax;
 
-import models.Figure;
-import suppliers.FigureSupplier;
-
-
 public class HelloWorld {
     public static void main(String[] args) {
         Figure[] figures = new Figure[6];

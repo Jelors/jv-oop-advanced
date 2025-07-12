@@ -1,4 +1,4 @@
-package suppliers;
+package core.basesyntax;
 
 public enum FigureType {
     Circle,

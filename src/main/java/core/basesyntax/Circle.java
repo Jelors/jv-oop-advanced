@@ -1,15 +1,11 @@
-package models;
+package core.basesyntax;
 
-import interfaces.Area;
-
-public class Circle extends Figure
-        implements Area
-{
+public class Circle extends Figure {
     private double radius;
 
     public Circle(double radius, String color) {
         this.radius = radius;
-        this.color = color;
+        setColor(color);
     }
 
     @Override
@@ -27,6 +23,6 @@ public class Circle extends Figure
                 + radius
                 + " units, "
                 + "color: "
-                + color);
+                + getColor());
     }
-}
+} 
